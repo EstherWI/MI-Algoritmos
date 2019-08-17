@@ -1,0 +1,9 @@
+EXIBICAO DE TODOS OS JOGADORES
+Michael Kors	1989	Inglaterra	10	Atacante
+Marcos Paulo	1993	Brasil	8	Volante
+Juan Pablo	1991	Espanha	7	Volante
+Maicon Wendell	1987	Inglaterra	10	Atacante
+Wesley Scobar	1994	Espanha	10	Goleiro
+Júlio Cesar	1980	Brasil	18	Goleiro
+Jonh Mayer	1990	Inglaterra	2	Zagueiro
+Pablo Henrique Santos	1986	Brasil	7	Atacante

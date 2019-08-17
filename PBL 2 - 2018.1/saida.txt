@@ -1,0 +1,33 @@
+RANKING
+        			C1		C2		C3		C4		C5		M
+Educacao
+equipe9				8.20		8.40		7.20		9.60		9.20		8.74
+equipe10			8.20		8.40		7.20		9.60		9.00		8.68
+equipe1				8.00		8.80		8.40		8.80		8.60		8.58
+equipe8				5.40		4.00		5.60		7.40		7.40		6.50
+equipe6				5.80		4.00		5.60		7.00		7.40		6.42
+equipe5				4.20		4.00		5.60		6.80		7.40		6.20
+
+Projeto Social
+equipe7				4.20		4.00		5.60		7.20		7.40		6.32
+
+Gestao
+equipe4				5.00		3.80		5.60		6.60		7.40		6.20
+equipe3				4.80		4.00		5.60		6.40		7.40		6.14
+equipe2				4.20		4.00		5.60		6.20		7.40		6.02
+
+
+RESULTADO FINAL
+Educacao: equipe9
+Projeto Social: equipe7
+Gestao: equipe4
+
+
+Equipes desclassificadas:
+equipe8
+equipe6
+equipe7
+equipe5
+equipe4
+equipe3
+equipe2
