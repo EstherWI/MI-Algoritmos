@@ -14,8 +14,8 @@ do código, e estou ciente que estes trechos não serão considerados para fins de 
 	
 	#include <stdio.h>
 	#include <stdlib.h>
-	
-			int main(){
+
+	int main(){
 			
 			double numtitulo;
 			int confirma, votopres, votogov, votosen, votodepfed, votodepest, resposta, totalvotos=0;
