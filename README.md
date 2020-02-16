@@ -1,2 +1,2 @@
 # MI-Algoritmos
-Projetos do primeiro semestre
+Projetos do Primeiro Semestre
