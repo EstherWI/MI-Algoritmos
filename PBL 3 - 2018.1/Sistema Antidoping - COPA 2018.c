@@ -3,13 +3,13 @@
 
 /***************************
 Autora: ESTHER DE SANTANA ARAUJO
-Componente Curricular: Algoritmos e ProgramaÁ„o I
+Componente Curricular: Algoritmos e Programa√ß√£o I
 Concluido em: 
-Declaro que este cÛdigo foi elaborado por mim de forma individual e n„o contÈm nenhum
-trecho de cÛdigo de outro colega ou de outro autor, tais como provindos de livros e
-apostilas, e p·ginas ou documentos eletrÙnicos da Internet. Qualquer trecho de cÛdigo
-de outra autoria que n„o a minha est· destacado com uma citaÁ„o para o autor e a fonte
-do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de avaliaÁ„o.
+Declaro que este c√≥digo foi elaborado por mim de forma individual e n√£o cont√©m nenhum
+trecho de c√≥digo de outro colega ou de outro autor, tais como provindos de livros e
+apostilas, e p√°ginas ou documentos eletr√¥nicos da Internet. Qualquer trecho de c√≥digo
+de outra autoria que n√£o a minha est√° destacado com uma cita√ß√£o para o autor e a fonte
+do c√≥digo, e estou ciente que estes trechos n√£o ser√£o considerados para fins de avalia√ß√£o.
 ******************************/
 
 #include <stdio.h>
@@ -69,7 +69,7 @@ int main(int argc, char *args[])
 				break;
 				
 			case 5:
-				//Filtra pela posiÁ„o
+				//Filtra pela posi√ß√£o
 				break;
 				
 			case 6:
@@ -89,7 +89,7 @@ int main(int argc, char *args[])
 	}while(resposta!=8);
 	}
 	else
-		printf("Arquivo n„o encontrado!");
+		printf("Arquivo n√£o encontrado!");
    	
 }
 
@@ -109,7 +109,7 @@ void Cadastro(Jogador* inicio, FILE* entrada)
 		fscanf(entrada, "%d", &lixo);
 		fgets(inicio->posicao_time, 20, entrada);
 		Organiza_Saida (inicio->posicao_time);
-	printf("%s", inicio->nome);
+		printf("%s", inicio->nome);
 }
 
 
