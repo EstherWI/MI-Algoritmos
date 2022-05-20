@@ -1,15 +1,15 @@
-//Concurso de inovaÁ„o tecnolÛgica
+//Concurso de inova√ß√£o tecnol√≥gica
 
 
 /***************************
 Autora: ESTHER DE SANTANA ARAUJO
-Componente Curricular: Algoritmos e ProgramaÁ„o I
+Componente Curricular: Algoritmos e Programa√ß√£o I
 Concluido em: 10 de junho de 2018
-Declaro que este cÛdigo foi elaborado por mim de forma individual e n„o contÈm nenhum
-trecho de cÛdigo de outro colega ou de outro autor, tais como provindos de livros e
-apostilas, e p·ginas ou documentos eletrÙnicos da Internet. Qualquer trecho de cÛdigo
-de outra autoria que n„o a minha est· destacado com uma citaÁ„o para o autor e a fonte
-do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de avaliaÁ„o.
+Declaro que este c√≥digo foi elaborado por mim de forma individual e n√£o cont√©m nenhum
+trecho de c√≥digo de outro colega ou de outro autor, tais como provindos de livros e
+apostilas, e p√°ginas ou documentos eletr√¥nicos da Internet. Qualquer trecho de c√≥digo
+de outra autoria que n√£o a minha est√° destacado com uma cita√ß√£o para o autor e a fonte
+do c√≥digo, e estou ciente que estes trechos n√£o ser√£o considerados para fins de avalia√ß√£o.
 ******************************/
 
 #include <stdio.h>
@@ -45,7 +45,7 @@ int main ()
 		if(resposta==2)
 		{
 			ler_arquivo (vetor, contador);
-			p= contador[0] + contador[1] + contador[2]; //p È o numero total de equipes, sendo a soma dos contadores de cada categoria
+			p= contador[0] + contador[1] + contador[2]; //p √© o numero total de equipes, sendo a soma dos contadores de cada categoria
 			calculamedia(vetor, p);
 			ordenanotas(vetor, p);
 			desempate (vetor, p);
@@ -56,7 +56,7 @@ int main ()
 		{
 			ler_manualmente (vetor, contador);
 			printf("A proxima etapa sera inserir as notas para que a media de cada equipe seja calculada.\n");
-			p= contador[0] + contador[1] + contador[2];//p È o numero total de equipes, sendo a soma dos contadores de cada categoria
+			p= contador[0] + contador[1] + contador[2];//p √© o numero total de equipes, sendo a soma dos contadores de cada categoria
 			calculacriteriosmanual (vetor, p);
 			calculamedia(vetor, p);
 			ordenanotas(vetor, p);
@@ -98,13 +98,13 @@ void ler_arquivo (equipe vetor[11], int contador[])
 		  }while(retorno!=0); 
 			i=0;
 
-				while(b!=48)// como dois J's ja foram pegos, um pela variavel de categoria e outro pela do nome da equipe, v„o sobrar 48 elementos de J's e C's
+				while(b!=48)// como dois J's ja foram pegos, um pela variavel de categoria e outro pela do nome da equipe, v√£o sobrar 48 elementos de J's e C's
 				{
-					fscanf(arquivo_entrada, "%s",lixo);//a vari·vel lixo ir· ler os C's e J's do arquivo, que n„o precisar„o ser utilizados 
+					fscanf(arquivo_entrada, "%s",lixo);//a vari√°vel lixo ir√° ler os C's e J's do arquivo, que n√£o precisar√£o ser utilizados 
 					b++;
 				}
 				
-				do //nesse laÁo comeÁa a leitura da matriz com as notas
+				do //nesse la√ßo come√ßa a leitura da matriz com as notas
 				{
 					fscanf(arquivo_entrada, "%s", vetor[i].nome_equipe); 
 					fscanf(arquivo_entrada, "%s", vetor[i].categoria);
@@ -135,9 +135,9 @@ void ler_arquivo (equipe vetor[11], int contador[])
 				
 					c=0; 
 					i++;
-			    }while(!feof(arquivo_entrada));// arquivo sendo lido atÈ o final
+			    }while(!feof(arquivo_entrada));// arquivo sendo lido at√© o final
 
-		for(j=0;j<i;j++)//este laÁo usa a soma anteriormente feita para calcular a media de cada criterio de cada equipe
+		for(j=0;j<i;j++)//este la√ßo usa a soma anteriormente feita para calcular a media de cada criterio de cada equipe
 	 	{
 		 	vetor[j].C1 = somacriterio1[j]/5.0;
 		 	vetor[j].C2 = somacriterio2[j]/5.0;
@@ -172,10 +172,10 @@ void ler_manualmente(equipe vetor [],int contador[])
 				contador[0]++;//contador do numero de equipes da categoria educacao
 				for(j=0; j<i; j++)
 				{
-					if(vetor[j].codigo == vetor[i].codigo)//verificaÁ„o a respeito de cÛdigos iguais pedida no descritivo
+					if(vetor[j].codigo == vetor[i].codigo)//verifica√ß√£o a respeito de c√≥digos iguais pedida no descritivo
 					{
 						printf("Esse codigo ja foi cadastrado. Digite outro para a equipe.\n");
-						scanf("%d", &vetor[i].codigo); //opÁ„o de registrar um outro cÛdigo
+						scanf("%d", &vetor[i].codigo); //op√ß√£o de registrar um outro c√≥digo
 					}
 				}
 				confirma=1;
@@ -233,7 +233,7 @@ void ler_manualmente(equipe vetor [],int contador[])
 		}
 
 			i++;
-			if(i<10)//verificaÁ„o para impedir que mais de 10 equipes sejam registradas
+			if(i<10)//verifica√ß√£o para impedir que mais de 10 equipes sejam registradas
 			{
 				printf("Digite 1 para registrar outra equipe e 2 se nao houver mais nenhuma equipe.\n");
 				scanf("%d", &resposta);
@@ -329,7 +329,7 @@ void calculacriteriosmanual (equipe vetor[10], int p)
 		soma5[i]= n1 + n2 + n3 + n4 + n5;
 	}
 
-	 	for(i=0; i<p;i++)//laÁo para calcular a media de cada criterio de todas as equipes
+	 	for(i=0; i<p;i++)//la√ßo para calcular a media de cada criterio de todas as equipes
 	 	{
 		 		vetor[i].C1 = soma1[i]/5.0;
 		 		vetor[i].C2 = soma2[i]/5.0;
@@ -345,11 +345,11 @@ void ordenanotas (equipe vetor[11], int p)
 	char auxi[30];
 	float guarda, aux;
 
-	for(i=0; i<p-1; i++)//mÈtodo bubblesort, ordenando decrescentemente com respeito a mÈdia de cada equipe
+	for(i=0; i<p-1; i++)//m√©todo bubblesort, ordenando decrescentemente com respeito a m√©dia de cada equipe
 	{
 		for(j=0; j<p-1-i; j++) 
 		{
-			if(vetor[j].media < vetor[j+1].media)//caso a equipe da posiÁ„o seguinte tenha media maior, as duas equipes trocam a posiÁ„o
+			if(vetor[j].media < vetor[j+1].media)//caso a equipe da posi√ß√£o seguinte tenha media maior, as duas equipes trocam a posi√ß√£o
 			{
 				aux = vetor[j+1].media;
 				vetor[j+1].media= vetor[j].media;
@@ -395,7 +395,7 @@ void separacategorias (equipe vetor [11], equipe gestao [10], equipe educacao [1
 	for(i=0; i<p; i++)
 	{
 		
-		if(strcasecmp(vetor[i].categoria, "E")==0)//verificaÁao para preencher o vetor educacao com suas respectivas equipes
+		if(strcasecmp(vetor[i].categoria, "E")==0)//verifica√ßao para preencher o vetor educacao com suas respectivas equipes
 		{
 			educacao[e].media = vetor[i].media;
 			strcpy(educacao[e].nome_equipe, vetor[i].nome_equipe);
@@ -408,7 +408,7 @@ void separacategorias (equipe vetor [11], equipe gestao [10], equipe educacao [1
 			e++;
 		}
 		
-		if(strcasecmp(vetor[i].categoria, "G")==0)//verificaÁao para preencher o vetor gestao com suas respectivas equipes
+		if(strcasecmp(vetor[i].categoria, "G")==0)//verifica√ßao para preencher o vetor gestao com suas respectivas equipes
 		{
 			gestao[g].media=vetor[i].media;
 			strcpy(gestao[g].nome_equipe, vetor[i].nome_equipe);
@@ -420,7 +420,7 @@ void separacategorias (equipe vetor [11], equipe gestao [10], equipe educacao [1
 			gestao[g].C5 = vetor[i].C5;
 			g++;
 		}
-		if(strcasecmp(vetor[i].categoria, "P")==0)//verificaÁao para preencher o vetor projeto_social com suas respectivas equipes
+		if(strcasecmp(vetor[i].categoria, "P")==0)//verifica√ßao para preencher o vetor projeto_social com suas respectivas equipes
 		{
 			projeto_social[ps].media=vetor[i].media;
 			strcpy(projeto_social[ps].nome_equipe, vetor[i].nome_equipe);
@@ -455,9 +455,9 @@ void desempate (equipe vetor [11], int p)
 		{
 			if(vetor[j].media==vetor[j+1].media) 
 			{	
-				if(vetor[j].C4<vetor[j+1].C4)//o critÈrio 4 È o de desempate, como pedido no descritivo
+				if(vetor[j].C4<vetor[j+1].C4)//o crit√©rio 4 √© o de desempate, como pedido no descritivo
 				{
-					aux = vetor[j+1].media; //da linha 460 atÈ a 490 È feita a troca das equipes no ranking, junto a todas as informaÁıes que elas possuem
+					aux = vetor[j+1].media; //da linha 460 at√© a 490 √© feita a troca das equipes no ranking, junto a todas as informa√ß√µes que elas possuem
 					vetor[j+1].media= vetor[j].media;
 					vetor[j].media = aux;
 					
