@@ -1,15 +1,15 @@
-//Sistema de VotaÁao TSEc
+//Sistema de Vota√ßao TSEc
 
 
 /***************************
 Autora: ESTHER DE SANTANA ARAUJO
-Componente Curricular: Algoritmos e ProgramaÁ„o I
+Componente Curricular: Algoritmos e Programa√ß√£o I
 Concluido em: 29 de abril de 2018
-Declaro que este cÛdigo foi elaborado por mim de forma individual e n„o contÈm nenhum
-trecho de cÛdigo de outro colega ou de outro autor, tais como provindos de livros e
-apostilas, e p·ginas ou documentos eletrÙnicos da Internet. Qualquer trecho de cÛdigo
-de outra autoria que n„o a minha est· destacado com uma citaÁ„o para o autor e a fonte
-do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de avaliaÁ„o.
+Declaro que este c√≥digo foi elaborado por mim de forma individual e n√£o cont√©m nenhum
+trecho de c√≥digo de outro colega ou de outro autor, tais como provindos de livros e
+apostilas, e p√°ginas ou documentos eletr√¥nicos da Internet. Qualquer trecho de c√≥digo
+de outra autoria que n√£o a minha est√° destacado com uma cita√ß√£o para o autor e a fonte
+do c√≥digo, e estou ciente que estes trechos n√£o ser√£o considerados para fins de avalia√ß√£o.
 ******************************/
 	
 	#include <stdio.h>
@@ -26,14 +26,14 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 			int ana_vitoria=0, paulo_guilherme=0, brancofed=0, nulofed=0, feminfed=0, mascfed=0;
 			int ana_rita_pacheco=0, ana_guilherme=0, adalberto_campos=0, brancoest=0, nuloest=0, feminest=0, mascest=0;
 			
-		do //esse laÁo de repetiÁ„o servir· para realizar um n˙mero de votaÁıes nao determinado previamente (linha 29 atÈ linha 316)
+		do //esse la√ßo de repeti√ß√£o servir√° para realizar um n√∫mero de vota√ß√µes nao determinado previamente (linha 29 at√© linha 316)
 			{ 
 				printf("Digite o numero do seu titulo de eleitor:\n");
 				scanf("%lf", &numtitulo);
 			
 			system("cls");
 			
-			do //esse laÁo de repetiÁ„o servir· para permitir a confirmaÁ„o do voto, e est· presente no processo de votaÁ„o dos demais cargos polÌticos
+			do //esse la√ßo de repeti√ß√£o servir√° para permitir a confirma√ß√£o do voto, e est√° presente no processo de vota√ß√£o dos demais cargos pol√≠ticos
 			{
 				printf("Indique o numero correspondente ao seu candidato a presidencia.\n");
 				printf("(17) Sra. Maeli Gente Boa\n");
@@ -46,7 +46,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				scanf("%d", &confirma);
 			}while(confirma==2);
 			
-			// os seguintes operadores condicionais ir„o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
+			// os seguintes operadores condicionais ir√£o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
 			if(votopres==17)
 			{
 				maeli++;
@@ -87,7 +87,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				scanf("%d", &confirma);
 			}while(confirma==2);
 			
-			// os seguintes operadores condicionais ir„o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
+			// os seguintes operadores condicionais ir√£o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
 			if(votogov==38)
 			{
 				maia_da_ana++;
@@ -126,7 +126,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				scanf("%d", &confirma);
 			}while(confirma==2);
 			
-			// os seguintes operadores condicionais ir„o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
+			// os seguintes operadores condicionais ir√£o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
 			if(votosen==04)
 			{	
 				gutemberg_silva++;
@@ -159,7 +159,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				scanf("%d", &confirma);
 			}while(confirma==2);
 			
-			// os seguintes operadores condicionais ir„o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
+			// os seguintes operadores condicionais ir√£o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
 			if(votodepfed == 56)
 			{
 				ana_vitoria++;
@@ -192,7 +192,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				scanf("%d", &confirma);
 			}while(confirma==2);
 			
-			// os seguintes operadores condicionais ir„o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
+			// os seguintes operadores condicionais ir√£o adicionar os votos nos candidatos escolhidos, para que o calculo de porcentagem seja realizado
 			
 			if(votodepest == 51)
 			{
@@ -222,7 +222,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				system ("cls");
 				printf("Espelho de votacao do eleitor: %.0f\n", numtitulo);
 			
-			// os seguintes operadores condicionais servem para printar na tela os votos do usuario, fornecendo seu espelho de votaÁ„o
+			// os seguintes operadores condicionais servem para printar na tela os votos do usuario, fornecendo seu espelho de vota√ß√£o
 			if(votopres==17)
 			{
 				printf("Presidente: (17)- Sra. Maeli Gente Boa\n");
@@ -330,7 +330,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 				printf("Cargo: Presidente\n");
 			if(validospres>0)
 			{			
-				// os condicionais da linha 336 atÈ a linha 343 informam se ha necessidade da realizaÁ„o do segundo turno, de acordo com as regras do TSE
+				// os condicionais da linha 336 at√© a linha 343 informam se ha necessidade da realiza√ß√£o do segundo turno, de acordo com as regras do TSE
 				if((maeli * 100 / validospres)<=50 && (antonio_do_brasil * 100 / validospres)<=50 && (lissandro_progresso * 100 / validospres)<=50)
 				{
 					printf("Havera segundo turno.");
@@ -380,7 +380,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 			}
 			else
 			{
-				printf("N„o houveram votos validos para este cargo.\n");
+				printf("N√£o houveram votos validos para este cargo.\n");
 			}
 				printf("Houve um total de %d votos brancos, correspondendo a %.2f %% do total \n", brancosen, (float) brancosen * 100/ totalvotos);
 				printf("Houve um total de %d votos nulos, correspondendo a %.2f %% do total \n", nulosen, (float) nulosen * 100/ totalvotos);
@@ -396,7 +396,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 			}
 			else
 			{
-				printf("N„o houveram votos validos para este cargo.\n");
+				printf("N√£o houveram votos validos para este cargo.\n");
 			}
 				printf("Houve um total de %d votos brancos, correspondendo a %.2f %% do total \n", brancofed, (float) brancofed * 100/ totalvotos);
 				printf("Houve um total de %d votos nulos, correspondendo a %.2f %% do total \n", nulofed, (float) nulofed * 100/ totalvotos);
@@ -413,7 +413,7 @@ do cÛdigo, e estou ciente que estes trechos n„o ser„o considerados para fins de 
 			}
 			else
 			{
-				printf("N„o houveram votos validos para este cargo.\n");
+				printf("N√£o houveram votos validos para este cargo.\n");
 			}
 				printf("Houve um total de %d votos brancos, correspondendo a %.2f %% do total \n", brancoest, (float) brancoest * 100/ totalvotos);
 				printf("Houve um total de %d votos nulos, correspondendo a %.2f %% do total \n", nuloest, (float) nuloest * 100/ totalvotos);
